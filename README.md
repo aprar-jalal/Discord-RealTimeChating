@@ -1,31 +1,50 @@
 # 🔮 UniCord — Real-Time Messaging Platform
 
-UniCord is a vibrant, modern, and high-performance chat application inspired by Discord but designed with a bright, cheerful, and gamified aesthetic.  
-It is built for academic, gaming, and coding communities with fully real-time text communication.
+UniCord is a vibrant, modern, and high-performance real-time messaging application inspired by Discord.  
+The platform is designed with a bright, playful, and user-friendly interface focused on smooth communication for gaming, coding, and academic communities.
 
 ---
 
-## 🚀 Key Features
+# 🚀 Features
 
-- ⚡ Real-Time Chatting — Instant message delivery powered by Socket.io  
-- 🎨 Vibrant UI — Bright light theme with modern typography and smooth animations  
-- 🔐 Authentication System — Secure login and registration flow  
-- 🎯 Dynamic Channels — Themed chat rooms like #gaming, #coding, #music, #memes  
-- 📜 Auto Scroll Chat — Smooth scrolling to latest messages  
-- 💬 Real-Time Updates — Live messaging without refresh  
+### ⚡ Real-Time Messaging
+- Instant message delivery using Socket.io
+- Live communication without refreshing the page
+
+### 🔐 Authentication System
+- User registration
+- User login
+- Secure authentication flow
+
+### 🎯 Chat Channels
+- Multiple themed rooms:
+  - #gaming
+  - #coding
+  - #music
+  - #memes
+
+### 🎨 Modern User Interface
+- Bright and colorful UI
+- Smooth animations
+- Clean responsive layout
+- User-friendly experience
+
+### 📜 Smooth Chat Experience
+- Automatic scroll to latest messages
+- Real-time updates between users
 
 ---
 
-## 🛠️ Tech Stack
+# 🛠️ Tech Stack
 
-### Frontend (Client)
-- React.js (Hooks, Functional Components)
+## Frontend
+- React.js
 - Socket.io-client
 - React Hook Form
 - React Icons
-- CSS3 (Custom styling & animations)
+- CSS3
 
-### Backend (Server)
+## Backend
 - Node.js
 - Express.js
 - Socket.io
@@ -33,4 +52,73 @@ It is built for academic, gaming, and coding communities with fully real-time te
 
 ---
 
-## 📦 Project Structure
+# 📦 Project Structure
+
+```text
+UniCord/
+│
+├── client/
+│   ├── src/
+│   │   ├── components/
+│   │   ├── pages/
+│   │   ├── services/
+│   │   └── App.css
+│
+├── server/
+│   ├── models/
+│   ├── routes/
+│   ├── controllers/
+│   └── server.js
+```
+
+---
+
+# 🚦 Getting Started
+
+## Prerequisites
+Make sure you have installed:
+
+- Node.js
+- MongoDB
+
+---
+
+# 🔧 Backend Setup
+
+```bash
+cd server
+npm install
+npm start
+```
+
+---
+
+# 💻 Frontend Setup
+
+```bash
+cd client
+npm install
+npm run dev
+```
+
+---
+
+# ⚡ Application Functionalities
+
+- Create a new account
+- Login securely
+- Join chat channels
+- Send and receive messages instantly
+- Real-time communication between users
+
+---
+
+# 🎨 Color Palette
+
+| Color | Usage |
+|------|------|
+| Sky Cyan `#00b4d8` | Primary branding |
+| Amber Yellow `#ffb703` | Active states |
+| Berry Crimson `#ff4d6d` | Errors & alerts |
+
+---
