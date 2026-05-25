@@ -1,0 +1,535 @@
+/* --- لوحة الألوان المرحة والمشرقة (أزرق فاتح، أصفر، أحمر) --- */
+:root {
+  --bg-main: #f0f4f8;            /* خلفية هادئة ومشرقة مريحة جداً */
+  --bg-card: #ffffff;            /* كروت بيضاء ناصعة */
+  --bg-input: #f7fafc;           /* حقول إدخال نظيفة */
+  --sidebar-bg: #e6f0fa;         /* أزرق فاتح جداً وجميل للقائمة الجانبية */
+  --chat-bg: #ffffff;            /* مساحة الشات بيضاء ومشرقة */
+  
+  /* الألوان الحيوية المطلوبة */
+  --cyan-bright: #00b4d8;        /* أزرق فاتح حيوي ومرح */
+  --blue-primary: #0077b6;       /* أزرق أساسي قوي */
+  --yellow-glow: #ffb703;        /* أصفر دافئ وناصع */
+  --red-accent: #ff4d6d;         /* أحمر بطيخي مرح للتنبيهات والخروج */
+  
+  /* النصوص والحدود */
+  --text-main: #2b2d42;          /* نص كحلي غامق واضح جداً */
+  --text-muted: #6c757d;         /* نص رمادي ناعم فرعي */
+  --border-color: #dbe5ee;       /* حدود واضحة وفاتحة */
+  --shadow-main: 0 10px 30px rgba(0, 119, 182, 0.08); /* ظلال ناعمة ومبهجة */
+}
+
+/* إعادة ضبط المتصفح بالكامل */
+body, html, #root, .main-app {
+  margin: 0;
+  padding: 0;
+  font-family: 'Quicksand', 'Inter', system-ui, sans-serif; /* خطوط مستديرة تزيد من الطابع المرح */
+  background-color: var(--bg-main);
+  color: var(--text-main);
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+/* تحسين الـ Scrollbar ليناسب الثيم الفاتح */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 180, 216, 0.2);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--cyan-bright);
+}
+
+/* ==========================================================================
+   --- شاشات الدخول والتسجيل المرحة (Login & Register) ---
+   ========================================================================== */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(135deg, #e0f2fe 0%, #f0fdf4 50%, #fef9c3 100%); /* تدرج لوني مبهج ومشرق */
+}
+
+.login-card {
+  background-color: var(--bg-card);
+  padding: 40px;
+  border-radius: 24px; /* زوايا دائرية أكثر لتعطي طابعاً وودياً */
+  border: 2px solid rgba(255, 255, 255, 0.8);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05);
+  width: 100%;
+  max-width: 380px;
+  text-align: center;
+  z-index: 10;
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.login-card:hover {
+  transform: translateY(-5px) scale(1.01);
+  box-shadow: 0 30px 50px rgba(0, 119, 182, 0.12);
+}
+
+/* حركة طفو ممتعة للايقونة */
+.discord-logo-mock {
+  font-size: 60px;
+  margin-bottom: 10px;
+  display: inline-block;
+  animation: bounce 2.5s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0) scale(1); }
+  50% { transform: translateY(-10px) scale(1.05); }
+}
+
+.login-card h2 {
+  margin: 0 0 6px 0;
+  font-size: 28px;
+  font-weight: 800;
+  color: var(--blue-primary);
+}
+
+.login-subtitle {
+  color: var(--text-muted);
+  margin-bottom: 25px;
+  font-size: 14.5px;
+  font-weight: 500;
+}
+
+.login-card label {
+  display: block;
+  text-align: left;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--blue-primary);
+  letter-spacing: 0.5px;
+  margin-bottom: 6px;
+}
+
+.login-card input {
+  width: 100%;
+  padding: 14px 16px;
+  box-sizing: border-box;
+  background-color: var(--bg-input);
+  border: 2px solid #e2e8f0;
+  border-radius: 12px;
+  color: var(--text-main);
+  font-size: 15px;
+  margin-bottom: 18px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.login-card input:focus {
+  outline: none;
+  border-color: var(--cyan-bright);
+  background-color: #ffffff;
+  box-shadow: 0 0 0 4px rgba(0, 180, 216, 0.15);
+}
+
+.login-btn {
+  width: 100%;
+  padding: 14px;
+  background: linear-gradient(135deg, var(--cyan-bright) 0%, var(--blue-primary) 100%);
+  box-shadow: 0 6px 20px rgba(0, 180, 216, 0.3);
+  border: none;
+  border-radius: 12px;
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.login-btn:hover {
+  box-shadow: 0 8px 25px rgba(0, 180, 216, 0.4);
+  transform: translateY(-1px);
+}
+
+.error-text {
+  color: var(--red-accent);
+  font-size: 13px;
+  margin-top: -12px;
+  margin-bottom: 15px;
+  text-align: left;
+  font-weight: 600;
+}
+
+.success-text {
+  color: #2a9d8f; /* لون نجاح مبهج */
+  font-size: 13px;
+  margin-top: -12px;
+  margin-bottom: 15px;
+  text-align: left;
+  font-weight: 600;
+}
+
+.redirect-text {
+  color: var(--text-muted);
+  font-size: 14px;
+  margin-top: 20px;
+  font-weight: 500;
+}
+
+.redirect-text span {
+  color: var(--cyan-bright);
+  cursor: pointer;
+  font-weight: 700;
+  margin-left: 4px;
+  transition: all 0.2s;
+}
+
+.redirect-text span:hover {
+  color: var(--blue-primary);
+  text-decoration: underline;
+}
+
+/* ==========================================================================
+   --- واجهة الشات الرئيسية المشرقة (App Layout) ---
+   ========================================================================== */
+.app-container {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--chat-bg);
+}
+
+/* القائمة الجانبية الأنيقة والمرحة */
+.sidebar {
+  width: 260px;
+  background-color: var(--sidebar-bg);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-right: 1px solid var(--border-color);
+}
+
+.sidebar-header {
+  padding: 16px 20px;
+  font-size: 18px;
+  font-weight: 800;
+  color: var(--blue-primary);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.channel-section {
+  flex: 1;
+  padding: 20px 12px;
+  overflow-y: auto;
+}
+
+.section-title {
+  font-size: 12px;
+  font-weight: 800;
+  color: var(--blue-primary);
+  opacity: 0.7;
+  margin-bottom: 10px;
+  padding-left: 8px;
+  letter-spacing: 0.5px;
+}
+
+.channel-list {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.channel-btn {
+  background: none;
+  border: none;
+  color: var(--text-muted);
+  text-align: left;
+  padding: 10px 14px;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 12px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  transition: all 0.2s ease;
+}
+
+.channel-btn:hover {
+  background-color: rgba(0, 119, 182, 0.05);
+  color: var(--blue-primary);
+  transform: translateX(3px);
+}
+
+.channel-btn.active {
+  background-color: #ffffff;
+  color: var(--cyan-bright);
+  font-weight: 700;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+}
+
+.channel-btn.active .hashtag {
+  color: var(--yellow-glow); /* الهاشتاج يضيء بالأصفر عند التفعيل */
+  transform: scale(1.2);
+}
+
+.hashtag {
+  font-size: 18px;
+  margin-right: 10px;
+  color: var(--cyan-bright);
+  font-weight: bold;
+  transition: transform 0.2s ease;
+}
+
+/* شريط المستخدم السفلي */
+.user-profile-bar {
+  background-color: #ffffff;
+  padding: 12px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid var(--border-color);
+  box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.02);
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.user-avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 2px solid var(--yellow-glow); /* تمييز الصورة برواز أصفر جميل */
+  overflow: hidden;
+  box-shadow: 0 3px 8px rgba(255, 183, 3, 0.2);
+  background-color: var(--cyan-bright);
+}
+
+.username-display {
+  font-weight: 700;
+  font-size: 14.5px;
+  color: var(--text-main);
+}
+
+/* زر الخروج الأحمر المبهج */
+.logout-btn {
+  background-color: rgba(255, 77, 109, 0.1);
+  border: 1px solid rgba(255, 77, 109, 0.2);
+  color: var(--red-accent);
+  padding: 6px 14px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 700;
+  transition: all 0.2s ease;
+}
+
+.logout-btn:hover {
+  background-color: var(--red-accent);
+  color: white;
+  box-shadow: 0 4px 12px rgba(255, 77, 109, 0.2);
+  transform: scale(1.05);
+}
+
+/* ==========================================================================
+   --- منطقة الشات المشرقة (Chat Area & Messages) ---
+   ========================================================================== */
+.chat-area {
+  flex: 1;
+  background-color: var(--chat-bg);
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-header {
+  height: 56px;
+  display: flex;
+  align-items: center;
+  padding: 0 24px;
+  border-bottom: 1px solid var(--border-color);
+  background-color: #ffffff;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.01);
+  gap: 6px;
+}
+
+.chat-header h2 {
+  font-size: 17px;
+  font-weight: 800;
+  margin: 0;
+  color: var(--text-main);
+}
+
+.header-hashtag {
+  font-size: 20px;
+  color: var(--cyan-bright);
+  font-weight: bold;
+}
+
+/* شارة الاتصال بلونها الأصفر الرائع */
+.yellow-badge {
+  background-color: var(--yellow-glow);
+  color: #ffffff;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 11.5px;
+  font-weight: 700;
+  margin-left: auto;
+  border: none;
+  box-shadow: 0 3px 10px rgba(255, 183, 3, 0.3);
+}
+
+/* حاوية الرسائل المنتفخة */
+.messages-container {
+  flex: 1;
+  padding: 24px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  background-color: #fafbfc; /* خلفية ناعمة جداً تفصل الرسائل */
+}
+
+/* ترحيب القناة */
+.welcome-banner {
+  border-bottom: 2px dashed var(--border-color);
+  padding: 20px 10px 25px 10px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.welcome-title {
+  font-size: 26px;
+  font-weight: 800;
+  color: var(--blue-primary);
+  margin: 0 0 6px 0;
+}
+
+.welcome-banner p {
+  color: var(--text-muted);
+  font-size: 15px;
+  font-weight: 500;
+}
+
+/* ستايل فقاعات الرسائل (مرح واحترافي) */
+.message-item {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  padding: 12px 16px;
+  background-color: #ffffff; /* تبدو كـ كروت بيضاء صغيرة فوق الخلفية السادة */
+  border-radius: 16px;
+  border: 1px solid rgba(0, 0, 0, 0.02);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.01);
+  transition: transform 0.2s ease;
+}
+
+.message-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0, 119, 182, 0.04);
+}
+
+.msg-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid var(--cyan-bright);
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.msg-content {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  width: 100%;
+}
+
+.msg-meta {
+  display: flex;
+  align-items: baseline;
+}
+
+.msg-sender {
+  font-weight: 700;
+  font-size: 14.5px;
+  color: var(--blue-primary);
+}
+
+.msg-time {
+  font-size: 11px;
+  color: var(--text-muted);
+  margin-left: 10px;
+}
+
+.msg-text {
+  margin: 0;
+  font-size: 15px;
+  color: var(--text-main);
+  line-height: 1.5;
+}
+
+/* صندوق إرسال الرسائل الدائري */
+.message-form {
+  padding: 16px 24px 24px 24px;
+  background-color: #ffffff;
+  border-top: 1px solid var(--border-color);
+}
+
+.message-form input {
+  width: 100%;
+  padding: 14px 24px;
+  box-sizing: border-box;
+  background-color: var(--bg-main);
+  border: 2px solid transparent;
+  border-radius: 30px; /* شكل بيضاوي كامل يعطي طابع تطبيقات الجات الحديثة والمرحة */
+  color: var(--text-main);
+  font-size: 15px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.message-form input:focus {
+  outline: none;
+  background-color: #ffffff;
+  border-color: var(--cyan-bright);
+  box-shadow: 0 4px 15px rgba(0, 180, 216, 0.15);
+}
+
+.message-form input::placeholder {
+  color: #a0aec0;
+}
+/* ستايل زر سهم الإرسال الدائري داخل حقل الإدخال */
+.send-message-btn {
+  position: absolute;
+  right: 8px;
+  background: linear-gradient(135deg, var(--cyan-bright), var(--blue-primary));
+  color: white;
+  border: none;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 18px;
+  transition: all 0.2s ease;
+  box-shadow: 0 3px 10px rgba(0, 180, 216, 0.2);
+}
+
+.send-message-btn:hover {
+  transform: scale(1.1) rotate(-10deg); /* تأثير حركة طيران طفيفة عند التمرير */
+  background: var(--blue-primary);
+}
+
+.send-message-btn:disabled {
+  background: #cbd5e1;
+  color: #94a3b8;
+  cursor: not-allowed;
+  box-shadow: none;
+  transform: none;
+}
