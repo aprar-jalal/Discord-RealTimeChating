@@ -1,43 +1,124 @@
 # 🔮 UniCord — Real-Time Messaging Platform
 
-UniCord is a vibrant, modern, and high-performance chat application inspired by Discord but crafted with a bright, cheerful, and gamified aesthetic. Designed with academic, gaming, and coding communities in mind, it supports fully real-time text channels with instant communication.
+UniCord is a vibrant, modern, and high-performance real-time messaging application inspired by Discord.  
+The platform is designed with a bright, playful, and user-friendly interface focused on smooth communication for gaming, coding, and academic communities.
 
 ---
 
-## 🚀 Key Features
+# 🚀 Features
 
-* **⚡ Real-Time Chatting:** Instant, sub-second message delivery powered by **Socket.io**.
-* **🎈 Playful & Vibrant UI:** A beautiful, customized bright light theme using crisp modern typography, fluid animations, and colorful channel categorization.
-* **🔒 Smooth Form Validation:** Error-free user experience during login and registration using **React Hook Form**.
-* **🎯 Contextual Dynamic Icons:** Fully unique, colorful icons tailored explicitly for individual topic rooms (`#gaming`, `#coding`, `#music`, `#memes`).
-* **📱 Seamless UX:** Automated smooth scroll-to-bottom features upon sending/receiving text.
+### ⚡ Real-Time Messaging
+- Instant message delivery using Socket.io
+- Live communication without refreshing the page
+
+### 🔐 Authentication System
+- User registration
+- User login
+- Secure authentication flow
+
+### 🎯 Chat Channels
+- Multiple themed rooms:
+  - #gaming
+  - #coding
+  - #music
+  - #memes
+
+### 🎨 Modern User Interface
+- Bright and colorful UI
+- Smooth animations
+- Clean responsive layout
+- User-friendly experience
+
+### 📜 Smooth Chat Experience
+- Automatic scroll to latest messages
+- Real-time updates between users
 
 ---
 
-## 🛠️ Tech Stack
+# 🛠️ Tech Stack
 
-### Frontend (Client)
-* **React.js** (Functional Components, Hooks)
-* **React Hook Form** (Client-side validation)
-* **Socket.io-client** (WebSockets)
-* **React Icons** (Heroicons package)
-* **CSS3** (Custom properties & modern flexible layout animations)
+## Frontend
+- React.js
+- Socket.io-client
+- React Hook Form
+- React Icons
+- CSS3
 
-### Backend (Server)
-* **Node.js** & **Express.js**
-* **Socket.io** (Real-time events infrastructure)
-* **MongoDB** (Message storage and user records)
+## Backend
+- Node.js
+- Express.js
+- Socket.io
+- MongoDB
 
 ---
 
-## 📦 Project Directory Structure
+# 📦 Project Structure
 
 ```text
 UniCord/
-├── client/              # Frontend React application
+│
+├── client/
 │   ├── src/
-│   │   ├── components/  # Sidebar, ChatArea, etc.
-│   │   ├── pages/       # Login, Register, Chat main view
-│   │   ├── services/    # api.js, socket.js configurations
-│   │   └── App.css      # Custom bright & colorful styles
-└── server/              # Backend Express & Socket API
+│   │   ├── components/
+│   │   ├── pages/
+│   │   ├── services/
+│   │   └── App.css
+│
+├── server/
+│   ├── models/
+│   ├── routes/
+│   ├── controllers/
+│   └── server.js
+```
+
+---
+
+# 🚦 Getting Started
+
+## Prerequisites
+Make sure you have installed:
+
+- Node.js
+- MongoDB
+
+---
+
+# 🔧 Backend Setup
+
+```bash
+cd server
+npm install
+npm start
+```
+
+---
+
+# 💻 Frontend Setup
+
+```bash
+cd client
+npm install
+npm run dev
+```
+
+---
+
+# ⚡ Application Functionalities
+
+- Create a new account
+- Login securely
+- Join chat channels
+- Send and receive messages instantly
+- Real-time communication between users
+
+---
+
+# 🎨 Color Palette
+
+| Color | Usage |
+|------|------|
+| Sky Cyan `#00b4d8` | Primary branding |
+| Amber Yellow `#ffb703` | Active states |
+| Berry Crimson `#ff4d6d` | Errors & alerts |
+
+---
