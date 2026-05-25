@@ -41,36 +41,3 @@ UniCord/
 │   │   ├── services/    # api.js, socket.js configurations
 │   │   └── App.css      # Custom bright & colorful styles
 └── server/              # Backend Express & Socket API
-
----
-
-##🚦 Getting Started
-Follow these steps to spin up the local development environment on your machine:
-
-Prerequisites
-Make sure you have Node.js installed on your machine.
-
-1. Setup the Backend Server
-Navigate to your server directory, install dependencies, and launch it:
-# Open a terminal from your project root
-cd server
-
-# Install backend dependencies
-npm install
-
-# Start your Node.js backend server
-npm start
-2. Setup the Frontend Client
-Open a new terminal window, navigate to the frontend directory, install the required packages, and run the development build:
-
-Bash
-# Navigate to the client folder
-cd client
-
-# Install frontend libraries (including react-router-dom and react-icons)
-npm install
-
-# Spin up VITE/React local preview
-npm run dev
----
-
