@@ -43,7 +43,8 @@ UniCord/
 └── server/              # Backend Express & Socket API
 
 ---
-###🚦 Getting Started
+
+##🚦 Getting Started
 Follow these steps to spin up the local development environment on your machine:
 
 Prerequisites
