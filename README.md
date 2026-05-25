@@ -1,43 +1,36 @@
 # 🔮 UniCord — Real-Time Messaging Platform
 
-UniCord is a vibrant, modern, and high-performance chat application inspired by Discord but crafted with a bright, cheerful, and gamified aesthetic. Designed with academic, gaming, and coding communities in mind, it supports fully real-time text channels with instant communication.
+UniCord is a vibrant, modern, and high-performance chat application inspired by Discord but designed with a bright, cheerful, and gamified aesthetic.  
+It is built for academic, gaming, and coding communities with fully real-time text communication.
 
 ---
 
 ## 🚀 Key Features
 
-* **⚡ Real-Time Chatting:** Instant, sub-second message delivery powered by **Socket.io**.
-* **🎈 Playful & Vibrant UI:** A beautiful, customized bright light theme using crisp modern typography, fluid animations, and colorful channel categorization.
-* **🔒 Smooth Form Validation:** Error-free user experience during login and registration using **React Hook Form**.
-* **🎯 Contextual Dynamic Icons:** Fully unique, colorful icons tailored explicitly for individual topic rooms (`#gaming`, `#coding`, `#music`, `#memes`).
-* **📱 Seamless UX:** Automated smooth scroll-to-bottom features upon sending/receiving text.
+- ⚡ Real-Time Chatting — Instant message delivery powered by Socket.io  
+- 🎨 Vibrant UI — Bright light theme with modern typography and smooth animations  
+- 🔐 Authentication System — Secure login and registration flow  
+- 🎯 Dynamic Channels — Themed chat rooms like #gaming, #coding, #music, #memes  
+- 📜 Auto Scroll Chat — Smooth scrolling to latest messages  
+- 💬 Real-Time Updates — Live messaging without refresh  
 
 ---
 
 ## 🛠️ Tech Stack
 
 ### Frontend (Client)
-* **React.js** (Functional Components, Hooks)
-* **React Hook Form** (Client-side validation)
-* **Socket.io-client** (WebSockets)
-* **React Icons** (Heroicons package)
-* **CSS3** (Custom properties & modern flexible layout animations)
+- React.js (Hooks, Functional Components)
+- Socket.io-client
+- React Hook Form
+- React Icons
+- CSS3 (Custom styling & animations)
 
 ### Backend (Server)
-* **Node.js** & **Express.js**
-* **Socket.io** (Real-time events infrastructure)
-* **MongoDB** (Message storage and user records)
+- Node.js
+- Express.js
+- Socket.io
+- MongoDB
 
 ---
 
-## 📦 Project Directory Structure
-
-```text
-UniCord/
-├── client/              # Frontend React application
-│   ├── src/
-│   │   ├── components/  # Sidebar, ChatArea, etc.
-│   │   ├── pages/       # Login, Register, Chat main view
-│   │   ├── services/    # api.js, socket.js configurations
-│   │   └── App.css      # Custom bright & colorful styles
-└── server/              # Backend Express & Socket API
+## 📦 Project Structure
