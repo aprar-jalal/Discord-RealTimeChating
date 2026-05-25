@@ -522,7 +522,7 @@ body, html, #root, .main-app {
 }
 
 .send-message-btn:hover {
-  transform: scale(1.1) rotate(-10deg); /* تأثير حركة طيران طفيفة عند التمرير */
+  transform: scale(1.1) rotate(-10deg); 
   background: var(--blue-primary);
 }
 
